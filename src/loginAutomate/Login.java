@@ -17,12 +17,13 @@ public class Login {
 	@BeforeMethod
 	public void loginLaunch() {
 		//System.setProperty("webdriver.chrome.driver","C:\\Users\\abhis\\Downloads\\chromedriver.exe");
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--no-sandbox");
-		options.addArguments("--disable-dev-shm-usage");
-		WebDriverManager.chromedriver().setup();
-		//WebDriverManager.chromedriver().architecture(Architecture.X64).setup();
-		driver= new ChromeDriver(options);
+		// ChromeOptions options = new ChromeOptions();
+		// options.addArguments("--no-sandbox");
+		// options.addArguments("--disable-dev-shm-usage");
+		// WebDriverManager.chromedriver().architecture(Architecture.X64).setup();
+		// driver= new ChromeDriver(options);
+		System.setProperty("webdriver.chrome.driver","chrome.exe");
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
