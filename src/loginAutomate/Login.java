@@ -10,8 +10,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.Architecture;
 
-
-
 public class Login {
 	
 	WebDriver driver;
