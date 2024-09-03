@@ -22,7 +22,7 @@ public class Login {
 		// options.addArguments("--disable-dev-shm-usage");
 		// WebDriverManager.chromedriver().architecture(Architecture.X64).setup();
 		// driver= new ChromeDriver(options);
-		System.setProperty("webdriver.chrome.driver","drivers/chrome.exe");
+		System.setProperty("webdriver.chrome.driver","../chrome.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
