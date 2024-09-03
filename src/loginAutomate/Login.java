@@ -24,7 +24,7 @@ public class Login {
 		// driver= new ChromeDriver(options);
 		 String currentDir = System.getProperty("user.dir");
  		System.out.println("Current dir using System:" + currentDir);
-		System.setProperty("webdriver.chrome.driver",currentDir +"\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",currentDir +"//chromedriver.exe");
 		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://amazon.in");
