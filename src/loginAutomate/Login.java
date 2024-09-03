@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Login {
 	
@@ -15,6 +16,7 @@ public class Login {
 	@BeforeMethod
 	public void loginLaunch() {
 		//System.setProperty("webdriver.chrome.driver","C:\\Users\\abhis\\Downloads\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver= new ChromeDriver();
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
