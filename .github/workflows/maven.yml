@@ -31,7 +31,7 @@ jobs:
    
     - name: Install Google Chrome
       run: |
-          wget https://example.com/path/to/google-chrome-stable_128.0.6613.119_amd64.deb
+          wget https://path/to/actual-google-chrome-stable_128.0.6613.119_amd64.deb
           sudo dpkg -i google-chrome-stable_128.0.6613.119_amd64.deb
           sudo apt-get -f install -y
           
