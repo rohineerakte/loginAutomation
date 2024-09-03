@@ -20,7 +20,7 @@ public class Login {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
-		WebDriverManager.chromedriver().setup();
+		WebDriverManager.chromedriver().architecture(io.github.bonigarcia.wdm.Architecture.X32).setup();
 		driver= new ChromeDriver(options);
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
