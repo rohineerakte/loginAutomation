@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
-import io.github.bonigarcia.wdm.Architecture;
+//import io.github.bonigarcia.wdm.Architecture;
 
 public class Login {
 	
@@ -20,7 +20,8 @@ public class Login {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
-		WebDriverManager.chromedriver().architecture(Architecture.X64).setup();
+		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().architecture(Architecture.X64).setup();
 		driver= new ChromeDriver(options);
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
