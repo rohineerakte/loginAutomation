@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 //import io.github.bonigarcia.wdm.WebDriverManager;
 //import io.github.bonigarcia.wdm.config.Architecture;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Login {
 	
@@ -24,12 +24,7 @@ public class Login {
 		String currentDir = System.getProperty("user.dir");
  		System.out.println("Current dir using System:" + currentDir);
 		System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-		ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--headless");
-	        options.addArguments("--no-sandbox");
-	        options.addArguments("--disable-dev-shm-usage");
-	        options.addArguments("--remote-debugging-port=9222");
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
