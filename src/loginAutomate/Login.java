@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 //import io.github.bonigarcia.wdm.WebDriverManager;
 //import io.github.bonigarcia.wdm.config.Architecture;
-//import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Login {
 	
