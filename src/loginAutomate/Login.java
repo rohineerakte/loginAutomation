@@ -6,9 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.config.Architecture;
-import org.openqa.selenium.chrome.ChromeOptions;
+//import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.config.Architecture;
+//import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Login {
 	
@@ -16,16 +16,15 @@ public class Login {
 	
 	@BeforeMethod
 	public void loginLaunch() {
-		 ChromeOptions options = new ChromeOptions();
-		 options.addArguments("--no-sandbox");
-		 options.addArguments("--disable-dev-shm-usage");
-		 WebDriverManager.chromedriver().architecture(Architecture.X64).setup();
-		 driver= new ChromeDriver(options);
-		 //String currentDir = System.getProperty("user.dir");
- 		//System.out.println("Current dir using System:" + currentDir);
-		//System.setProperty("webdriver.chrome.driver",currentDir +"//chromedriver");
-		
-		//WebDriver driver = new ChromeDriver();
+//		 ChromeOptions options = new ChromeOptions();
+//		 options.addArguments("--no-sandbox");
+//		 options.addArguments("--disable-dev-shm-usage");
+//		 WebDriverManager.chromedriver().architecture(Architecture.X64).setup();
+//		 driver= new ChromeDriver(options);
+		String currentDir = System.getProperty("user.dir");
+ 		System.out.println("Current dir using System:" + currentDir);
+		System.setProperty("webdriver.chrome.driver",currentDir +"\\chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -40,7 +39,9 @@ public class Login {
 	
 	@AfterMethod
 	public void tearDown() {
+		 if (driver != null) {
 		driver.quit();
+		 }
 	}
 
 }
