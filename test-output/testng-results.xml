@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-28T18:14:27 IST" name="Suite" finished-at="2024-08-28T18:14:34 IST" duration-ms="7737">
+  <suite started-at="2024-09-04T11:02:36 IST" name="Default suite" finished-at="2024-09-04T11:02:41 IST" duration-ms="5036">
     <groups>
     </groups>
-    <test started-at="2024-08-28T18:14:27 IST" name="Test" finished-at="2024-08-28T18:14:34 IST" duration-ms="7737">
+    <test started-at="2024-09-04T11:02:36 IST" name="Default test" finished-at="2024-09-04T11:02:41 IST" duration-ms="5036">
       <class name="loginAutomate.Login">
-        <test-method is-config="true" signature="loginLaunch()[pri:0, instance:loginAutomate.Login@1de5f259]" started-at="2024-08-28T18:14:27 IST" name="loginLaunch" finished-at="2024-08-28T18:14:34 IST" duration-ms="7379" status="PASS">
+        <test-method is-config="true" signature="loginLaunch()[pri:0, instance:loginAutomate.Login@2d710f1a]" started-at="2024-09-04T11:02:36 IST" name="loginLaunch" finished-at="2024-09-04T11:02:41 IST" duration-ms="4707" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLaunch -->
-        <test-method signature="verifyTitle()[pri:0, instance:loginAutomate.Login@1de5f259]" started-at="2024-08-28T18:14:34 IST" name="verifyTitle" finished-at="2024-08-28T18:14:34 IST" duration-ms="71" status="PASS">
+        <test-method signature="verifyTitle()[pri:0, instance:loginAutomate.Login@2d710f1a]" started-at="2024-09-04T11:02:41 IST" name="verifyTitle" finished-at="2024-09-04T11:02:41 IST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginAutomate.Login@1de5f259]" started-at="2024-08-28T18:14:34 IST" name="tearDown" finished-at="2024-08-28T18:14:34 IST" duration-ms="255" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginAutomate.Login@2d710f1a]" started-at="2024-09-04T11:02:41 IST" name="tearDown" finished-at="2024-09-04T11:02:41 IST" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- loginAutomate.Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
