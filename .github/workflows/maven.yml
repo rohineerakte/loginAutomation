@@ -36,9 +36,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wget
-          # Download specific version of Google Chrome
-          wget https://www.googleapis.com/download/storage/v1/b/chromium-browser-apt-packages/o/pool%2Fmain%2Fg%2Fgoogle-chrome%2Fgoogle-chrome-stable_128.0.6613.119-1_amd64.deb?alt=media -O google-chrome-stable_current_amd64.deb
-          sudo dpkg -i google-chrome-stable_current_amd64.deb
+          wget https://example.com/path/to/google-chrome-stable_128.0.6613.119-1_amd64.deb
+          sudo dpkg -i google-chrome-stable_128.0.6613.119-1_amd64.deb
           sudo apt-get -f install
 
       - name: Install ChromeDriver
