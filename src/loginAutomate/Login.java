@@ -24,7 +24,12 @@ public class Login {
 		String currentDir = System.getProperty("user.dir");
  		System.out.println("Current dir using System:" + currentDir);
 		System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--headless");
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-dev-shm-usage");
+	        options.addArguments("--remote-debugging-port=9222");
+		driver = new ChromeDriver(options);
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
