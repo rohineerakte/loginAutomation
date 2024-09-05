@@ -40,6 +40,7 @@ public class Login {
 	public void verifyTitle() {
 		String actualTitle= driver.getTitle();
 		String expectedTtitle="Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in";
+		System.out.println("Page Title is "+ driver.getTitle());
 		Assert.assertEquals(actualTitle, expectedTtitle);
 	}
 	
