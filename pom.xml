@@ -4,8 +4,8 @@
   <artifactId>loginAutomate</artifactId>
   <version>0.0.1-SNAPSHOT</version>
     <properties>
-  	<maven.compiler.source>1.8</maven.compiler.source>
-  	<maven.compiler.target>1.8</maven.compiler.target>
+  	<maven.compiler.source>17</maven.compiler.source>
+  	<maven.compiler.target>17</maven.compiler.target>
   </properties>
   <dependencies>
 	  <dependency>
@@ -37,8 +37,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.13.0</version>
 	 <configuration>
-	        <source>1.8</source> <!-- Specify Java version here -->
-	        <target>1.8</target> <!-- Specify Java version here -->
+	        <source>17</source> <!-- Specify Java version here -->
+	        <target>17</target> <!-- Specify Java version here -->
 	</configuration>      
       </plugin>
 	<plugin>
