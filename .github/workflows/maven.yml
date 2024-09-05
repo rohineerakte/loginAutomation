@@ -59,9 +59,6 @@ jobs:
           name: test-results
           path: test-output/index.html
 
-      - name: Generate TestNG report URL
-        id: report-url
-        run: |
-          echo "TEST_REPORT_URL=https://github.com/${{ github.repository }}/suites/${{ github.run_id }}/artifacts" >> $GITHUB_ENV
+    
 
 
