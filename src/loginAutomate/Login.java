@@ -26,7 +26,7 @@ public class Login {
 		System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
 		//options = new ChromeOptions();
 		ChromeOptions options = new ChromeOptions();
-		options.setExperimentalOption("useAutomationExtension", false);
+		options.addArguments("--remote-debugging-port=9222");
 		driver = new ChromeDriver(options);
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
