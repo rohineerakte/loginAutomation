@@ -54,10 +54,10 @@ jobs:
         run: mvn -B package --file pom.xml
         
       - name: Upload TestNG report
-        uses: actions/upload-artifact@v4
+        uses: actions/checkout@v4
         with:
           name: testng-report
-          path: actions/upload-artifact@v4/test-output
+          path: actions/checkout@v4/test-output
 
       - name: Generate TestNG report URL
         id: report-url
