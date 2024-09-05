@@ -53,10 +53,11 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
         
-      - name: Upload TestNG report
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
         with:
-          name: testng-report
-          path: test-output
+          name: test-results
+          path: test-output/
 
       - name: Generate TestNG report URL
         id: report-url
