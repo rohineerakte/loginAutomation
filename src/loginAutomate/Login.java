@@ -26,7 +26,10 @@ public class Login {
 		System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
 		//options = new ChromeOptions();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--remote-debugging-port=9222");
+		//options.addArguments("--remote-debugging-port=9222");
+		options.addArguments("--headless"); // Run in headless mode
+	        options.addArguments("--no-sandbox"); // Bypass the sandbox
+	        options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
 		driver = new ChromeDriver(options);
 		driver.get("https://amazon.in");
 		driver.manage().window().maximize();
