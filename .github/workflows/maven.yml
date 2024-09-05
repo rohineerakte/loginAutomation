@@ -53,7 +53,15 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
         
-      - name: Run Tests
-        run: mvn test
+      - name: Upload TestNG report
+        uses: actions/upload-artifact@v4
+        with:
+          name: testng-report
+          path: actions/upload-artifact@v4/test-output
+
+      - name: Generate TestNG report URL
+        id: report-url
+        run: |
+          echo "TEST_REPORT_URL=https://github.com/${{ github.repository }}/suites/${{ github.run_id }}/artifacts" >> $GITHUB_ENV
 
 
