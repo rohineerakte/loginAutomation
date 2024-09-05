@@ -35,7 +35,11 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.11.0</version>
+        <version>3.13.0</version>
+	 <configuration>
+	        <source>1.8</source> <!-- Specify Java version here -->
+	        <target>1.8</target> <!-- Specify Java version here -->
+	</configuration>      
       </plugin>
 	<plugin>
         <groupId>org.apache.maven.plugins</groupId>
