@@ -21,12 +21,11 @@ public class Login {
 //		 options.addArguments("--disable-dev-shm-usage");
 //		 WebDriverManager.chromedriver().architecture(Architecture.X64).setup();
 //		 driver= new ChromeDriver(options);
-		String currentDir = System.getProperty("user.dir");
- 		System.out.println("Current dir using System:" + currentDir);
-		System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
-		//options = new ChromeOptions();
+		// String currentDir = System.getProperty("user.dir");
+ 	// 	System.out.println("Current dir using System:" + currentDir);
+		// System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
+		// //options = new ChromeOptions();
 		ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--remote-debugging-port=9222");
 		options.addArguments("--headless"); // Run in headless mode
 	        options.addArguments("--no-sandbox"); // Bypass the sandbox
 	        options.addArguments("--disable-dev-shm-usage"); // Overcome limited resource problems
